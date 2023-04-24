@@ -5,6 +5,21 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(/fonts/Roboto/Roboto-Medium.ttf);
+}
+
 .navbar {
     padding: 20px;
     display: flex;
@@ -44,9 +59,89 @@ a {
 
 .hero {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.691), rgba(0, 0, 0, 0.691)), url(https___cdn.cnn.com_cnnnext_dam_assets_230209170944-stocks-we-love-restricted.jpg);
+    background-image: linear-gradient(rgba(3, 2, 2, 0.691), rgba(3, 2, 2, 0.691)), url(https___cdn.cnn.com_cnnnext_dam_assets_230209170944-stocks-we-love-restricted.jpg);
     background-position: center;
     background-size: cover;
-    width: 200vh;
+    width: 100%;
     height: 100vh;
+    background-attachment: fixed;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 170px;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-text h1 {
+    text-transform: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    display: flex;
+    color: #efefef;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Raleway";
+    line-height: 1.5;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-content h1 {
+    color: black;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+table {
+    margin-top: 20px;
+    width: 50%;
+    border: 2px solid rgba(236, 199, 199, 0.3);
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Roboto-Medium";
+    font-family: 700;
+}
+
+td {
+    padding: 20px 15px;
+    text-align: left;
+    border-bottom: solid 1px rgb(210, 133, 133);
+    font-size: 15px;
+    font-family: "Roboto";
 }
